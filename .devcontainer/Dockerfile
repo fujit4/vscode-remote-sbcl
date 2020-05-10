@@ -56,7 +56,7 @@ RUN set -x; \
 # return root user
 USER root
 RUN set -x; \
-  printf '#!/bin/sh\nros run -- "$@"\n' > /usr/local/bin/sbcl \
+  printf '#!/bin/sh\nrlwrap ros run -- "$@"\n' > /usr/local/bin/sbcl \
   && chmod 777 /usr/local/bin/sbcl
 
 ## set alias user
@@ -65,5 +65,4 @@ USER ${USERNAME}
 
 # set alias
 RUN echo 'alias ros="rlwrap ros"' >> /home/${USERNAME}/.bashrc \
-  echo 'alias sbcl="rlwrap sblc"' >> /home/${USERNAME}/.bashrc \
   echo 'alias ll="ls -al"' >> /home/${USERNAME}/.bashrc
