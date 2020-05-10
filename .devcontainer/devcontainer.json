@@ -1,0 +1,15 @@
+{
+    //"image": "fukamachi/sbcl:2.0.3",
+    "dockerFile": "Dockerfile",
+    "name": "sbcl-atcoder",
+    "context": "..",
+    "extensions": ["mattn.lisp"],
+
+    // Use 'settings' to set *default* container specific settings.json values on container create. 
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+
+    "remoteUser": "lisper"
+
+  }
