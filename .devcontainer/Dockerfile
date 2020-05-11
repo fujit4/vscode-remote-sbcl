@@ -65,4 +65,4 @@ USER ${USERNAME}
 
 # set alias
 RUN echo 'alias ros="rlwrap ros"' >> /home/${USERNAME}/.bashrc \
-  echo 'alias ll="ls -al"' >> /home/${USERNAME}/.bashrc
+  && echo 'alias ll="ls -al"' >> /home/${USERNAME}/.bashrc

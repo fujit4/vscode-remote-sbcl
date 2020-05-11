@@ -1,7 +1,7 @@
 {
     //"image": "fukamachi/sbcl:2.0.3",
     "dockerFile": "Dockerfile",
-    "name": "sbcl-atcoder",
+    "name": "vscode-sbcl",
     "context": "..",
     "extensions": ["mattn.lisp"],
 
